@@ -7,12 +7,12 @@ plan:
 stages:
   - jobs:
     - scripts:
-        - Build
-        - Test
-        - Publish
-      requirements:
-        - linux
-        # - docker
+      - Build
+      - Test
+      - Publish
+    requirements:
+      - linux
+      # - docker
 
 Build:
   tasks:
