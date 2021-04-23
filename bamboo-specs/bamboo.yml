@@ -5,13 +5,14 @@ plan:
   key: ROCKET
   name: CI - Rocket
 stages:
-  - CI:
-    - Build
-    - Test
-    - Publish
-  requirements:
-    - linux
-    # - docker
+  - jobs:
+    - scripts:
+        - Build
+        - Test
+        - Publish
+      requirements:
+        - linux
+        # - docker
 
 Build:
   tasks:
