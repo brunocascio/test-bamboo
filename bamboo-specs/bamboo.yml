@@ -9,9 +9,6 @@ stages:
       - Build
       - Test
       - Publish
-    requirements:
-      - linux
-      # - docker
 
 Build:
   tasks:
