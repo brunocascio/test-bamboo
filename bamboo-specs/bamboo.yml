@@ -6,7 +6,6 @@ plan:
   name: CI - Rocket
 stages:
   - jobs:
-    - scripts:
       - Build
       - Test
       - Publish
