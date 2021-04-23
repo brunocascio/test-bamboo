@@ -3,12 +3,26 @@ version: 2
 plan:
   project-key: MARS
   key: ROCKET
-  name: Build the rocket
+  name: CI - Rocket
 stages:
-  - Build hull:
+  - CI:
     - Build
+    - Test
+    - Publish
 
 Build:
   tasks:
     - script:
-      - echo 'Hello World!'
+      - echo 'Building the app...'
+
+Test:
+  tasks:
+    - script:
+      - echo 'Testing engine...'
+    - script:
+      - echo 'Testing chasis...'
+
+Publish:
+  tasks:
+    - script:
+      - echo 'Publishing pepes...'
